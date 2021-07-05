@@ -1,0 +1,147 @@
+﻿<Page x:Class="StromyatnikovRecipe.Recepiess"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StromyatnikovRecipe"
+      mc:Ignorable="d" 
+      d:DesignHeight="666" 
+      d:DesignWidth="411"
+      Title="Recepiess">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Margin="28 32 0 0"
+                FontSize="24"
+                FontWeight="Bold"
+                Foreground="#683529"
+                Text="Articles"/>
+            <StackPanel
+                Orientation="Horizontal">
+                <Border
+                    Cursor="Hand"
+                    CornerRadius="10"
+                    Margin="28 0 0 0"
+                    Background="#EFD599"
+                    Width="70"
+                    Height="70">
+                    <StackPanel
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center">
+                        <Image
+                            Width="25.87"
+                            Source="/ResF/Cacke.png"/>
+                        <TextBlock
+                            Margin="1 12 1 1"
+                            FontSize="14"
+                            Foreground="#683529"
+                            Text="Deserts"/>
+                    </StackPanel>
+                </Border>
+                <Border
+                    Cursor="Hand"
+                    CornerRadius="10"
+                    Margin="25 0 0 0"
+                    Background="#EFD599"
+                    Width="70"
+                    Height="70">
+                    <StackPanel
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center">
+                        <Image
+                            Width="25.87"
+                            Source="/ResF/apple.png"/>
+                        <TextBlock
+                            Margin="1 12 1 1"
+                            FontSize="14"
+                            Foreground="#683529"
+                            Text="Salats"/>
+                    </StackPanel>
+                </Border>
+                <Border
+                    Cursor="Hand"
+                    CornerRadius="10"
+                    Margin="25 0 0 0"
+                    Background="#EFD599"
+                    Width="70"
+                    Height="70">
+                    <StackPanel
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center">
+                        <Image
+                            Width="25.87"
+                            Source="/ResF/soup.png"/>
+                        <TextBlock
+                            Margin="1 12 1 1"
+                            FontSize="14"
+                            Foreground="#683529"
+                            Text="Soupe"/>
+                    </StackPanel>
+                </Border>
+                <Border
+                    Cursor="Hand"
+                    CornerRadius="10"
+                    Margin="25 0 0 0"
+                    Background="#EFD599"
+                    Width="70"
+                    Height="70">
+                    <StackPanel
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center">
+                        <Image
+                            Width="25.87"
+                            Source="/ResF/drinks.png"/>
+                        <TextBlock
+                            Margin="1 12 1 1"
+                            FontSize="14"
+                            Foreground="#683529"
+                            Text="Drinks"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <Grid
+                Margin="0 21 0 0">
+                <Image 
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/borsch.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="Borsch"
+                    Foreground="White"/>
+            </Grid>
+            <Grid
+                Margin="0 14 0 0">
+                <Image 
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/tomyam.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="Tom yam soupe"
+                    Foreground="White"/>
+            </Grid>
+            <Grid
+                Margin="0 14 0 0">
+                <Image 
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/chicken.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="Chicken and salat"
+                    Foreground="White"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

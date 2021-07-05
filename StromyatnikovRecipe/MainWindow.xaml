@@ -1,0 +1,15 @@
+﻿<Window x:Class="StromyatnikovRecipe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StromyatnikovRecipe"
+        mc:Ignorable="d"
+        Title="MainWindow"       d:DesignHeight="731" 
+      d:DesignWidth="411">
+    <Grid>
+        <Frame
+            NavigationUIVisibility="Hidden"
+            Name="FrmMain"/>
+    </Grid>
+</Window>

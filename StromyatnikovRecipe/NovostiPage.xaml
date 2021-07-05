@@ -1,0 +1,105 @@
+﻿<Page x:Class="StromyatnikovRecipe.NovostiPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StromyatnikovRecipe"
+      mc:Ignorable="d" 
+      d:DesignHeight="666" 
+      d:DesignWidth="411"
+      Title="NovostiPage">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock
+                Margin="28 32 0 0"
+                FontSize="24"
+                FontWeight="Bold"
+                Foreground="#683529"
+                Text="Articles"/>
+            <Border
+                Style="{StaticResource BorderAutorization}"
+                Background="#E5E5E5"
+                Height="48"
+                Width="356"
+                CornerRadius="10">
+                <Grid>
+                    <TextBox
+                        Style="{StaticResource TbAutorization}"
+                        Foreground="#9C9C9C"
+                        TextAlignment="Left"
+                        FontSize="18"
+                        Background="#E5E5E5"
+                        Margin="5 10 5 0"
+                        BorderBrush="Transparent"
+                        Text="Search"/>
+                    <Image
+                        Margin="0 0 10 0"
+                        HorizontalAlignment="Right"
+                        Width="25.69"
+                        Source="/ResF/lupaGray.png"/>
+                </Grid>
+            </Border>
+            <TextBlock
+                Margin="39 7 0 0"
+                FontSize="18"
+                FontWeight="Bold"
+                Foreground="#683529"
+                Text="Today"/>
+            <Grid>
+                <Image 
+                    Mouse.MouseDown="Image_MouseDown"
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/imgToday.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="How To Age Your Own Whiskey"
+                    Foreground="White"/>
+            </Grid>
+            <TextBlock
+                Margin="39 7 0 0"
+                FontSize="18"
+                FontWeight="Bold"
+                Foreground="#683529"
+                Text="Yesterday"/>
+            <Grid>
+                <Image 
+                    Mouse.MouseDown="Image_MouseDown_1"
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/imgYearstaday.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="Gas cooking"
+                    Foreground="White"/>
+            </Grid>
+            <TextBlock
+                Margin="39 7 0 0"
+                FontSize="18"
+                FontWeight="Bold"
+                Foreground="#683529"
+                Text="27.05.2020"/>
+            <Grid>
+                <Image 
+                    Mouse.MouseDown="Image_MouseDown_2"
+                    Cursor="Hand"
+                    Width="361"
+                    Source="/ResF/img27.png"/>
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Margin="0 0 38 32"
+                    FontSize="24"
+                    Text="Why do crab?"
+                    Foreground="White"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

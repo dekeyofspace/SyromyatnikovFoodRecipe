@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{305120CF-FDC1-4513-AA43-1A473773C2FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StromyatnikovRecipe</RootNamespace>
+    <AssemblyName>StromyatnikovRecipe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Articles.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Aurorization.xaml.cs">
+      <DependentUpon>Aurorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Favorites.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FovourtiesPage.xaml.cs">
+      <DependentUpon>FovourtiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrameClass.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyArticles.xaml.cs">
+      <DependentUpon>MyArticles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NovostiPage.xaml.cs">
+      <DependentUpon>NovostiPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ODBClass.cs" />
+    <Compile Include="OnePage.xaml.cs">
+      <DependentUpon>OnePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFeed.xaml.cs">
+      <DependentUpon>PageFeed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Recepiess.xaml.cs">
+      <DependentUpon>Recepiess.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyromRP.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyromRP.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyromRP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SyromRP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SyromRP.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TwoPage.xaml.cs">
+      <DependentUpon>TwoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.xaml.cs">
+      <DependentUpon>UserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <DependentUpon>SyromRP.tt</DependentUpon>
+    </Compile>
+    <Page Include="Aurorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FovourtiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MyArticles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NovostiPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OnePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Recepiess.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TwoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="SyromRP.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SyromRP.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="SyromRP.edmx.diagram">
+      <DependentUpon>SyromRP.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResF\apple.png" />
+    <Resource Include="ResF\bacmain.png" />
+    <Resource Include="ResF\borsch.png" />
+    <Resource Include="ResF\Cacke.png" />
+    <Resource Include="ResF\chicken.png" />
+    <Resource Include="ResF\drinks.png" />
+    <Resource Include="ResF\grayLupa.png" />
+    <Resource Include="ResF\HearBr.png" />
+    <Resource Include="ResF\HearWhite.png" />
+    <Resource Include="ResF\img27.png" />
+    <Resource Include="ResF\imgBack.png" />
+    <Resource Include="ResF\imgFeed.png" />
+    <Resource Include="ResF\imgToday.png" />
+    <Resource Include="ResF\imgYearstaday.png" />
+    <Resource Include="ResF\logout.png" />
+    <Resource Include="ResF\lupa.png" />
+    <Resource Include="ResF\lupabr.png" />
+    <Resource Include="ResF\lupaGray.png" />
+    <Resource Include="ResF\lupaWh.png" />
+    <Resource Include="ResF\newBr.png" />
+    <Resource Include="ResF\newWh.png" />
+    <Resource Include="ResF\peopBR.png" />
+    <Resource Include="ResF\peopWH.png" />
+    <Resource Include="ResF\picProfile.png" />
+    <Resource Include="ResF\soup.png" />
+    <Resource Include="ResF\tomyam.png" />
+    <Content Include="SyromRP.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SyromRP.Context.cs</LastGenOutput>
+      <DependentUpon>SyromRP.edmx</DependentUpon>
+    </Content>
+    <Content Include="SyromRP.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SyromRP.edmx</DependentUpon>
+      <LastGenOutput>SyromRP.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

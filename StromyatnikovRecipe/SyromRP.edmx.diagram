@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="55bd379b63a643aa8c1326439c8b2b69" Name="Diagram1">
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.Articles" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.Categories" Width="1.5" PointX="3.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.Favorites" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.Recipes" Width="1.5" PointX="6" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MAD_RecipesExamModel.Users" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="MAD_RecipesExamModel.FK_Articles_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MAD_RecipesExamModel.FK_Recipes_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="MAD_RecipesExamModel.FK_Favorites_Recipes" ManuallyRouted="false" />
+        <AssociationConnector Association="MAD_RecipesExamModel.FK_Favorites_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="MAD_RecipesExamModel.FK_Recipes_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

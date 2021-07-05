@@ -1,0 +1,38 @@
+﻿<Page x:Class="StromyatnikovRecipe.TwoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StromyatnikovRecipe"
+      mc:Ignorable="d" 
+      d:DesignHeight="731" 
+      d:DesignWidth="411"
+      Title="TwoPage">
+
+    <Grid        Background="#EFD599"
+        Cursor="Hand"
+        Mouse.MouseDown="Grid_MouseDown">
+        <TextBlock
+            Mouse.MouseDown="TextBlock_MouseDown"
+            Cursor="Hand"
+            Style="{StaticResource TbCloseApp}"
+            VerticalAlignment="Top"
+            Margin="0 5 10 0"
+            HorizontalAlignment="Right"
+            Foreground="White"
+            FontWeight="Bold"
+            FontSize="36"
+            Text="X"/>
+        <StackPanel
+            Margin="0 205 0 0"
+            HorizontalAlignment="Center">
+            <TextBlock
+                TextAlignment="Justify"
+                Foreground="White"
+                FontSize="32"
+                FontFamily="Preface Sans">
+                Ops
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
